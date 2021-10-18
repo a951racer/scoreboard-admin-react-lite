@@ -6,17 +6,18 @@ import Game from './Components/Game/Game'
 import GameInput from './Components/Game/GameInput'
 import Players from './Components/Players/Players'
 import PlayerInput from './Components/Players/PlayerInput'
-//import Scores from './Components/Scores/Scores'
 import ScoreInput from './Components/Scores/ScoresInput'
 
 import './App.css';
+
 
 function App() {
   const [socket, setSocket] = useState(null)
 
   useEffect(() => {
-    const newSocket = io(`http://${window.location.hostname}:3000`);
+    const newSocket = io(process.env.REACT_APP_SERVER_URL);
     setSocket(newSocket);
+    console.log('socket opened to: ', process.env.REACT_APP_SERVER_URL)
     return () => newSocket.close();
   }, [setSocket]);
 
