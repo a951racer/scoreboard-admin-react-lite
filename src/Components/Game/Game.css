@@ -1,0 +1,21 @@
+.center-text {
+  text-align: center;
+}
+
+.game-name {
+  text-align: center;
+  color:darkblue;
+  font-size: 44px;
+  font-weight: bold;
+}
+
+.game-code {
+  text-align: center;
+  color:firebrick;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.section {
+  margin-bottom: 50px;
+}
