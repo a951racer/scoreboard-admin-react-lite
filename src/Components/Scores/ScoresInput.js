@@ -44,7 +44,7 @@ const NewScore = ({socket}) => {
         score
     }
     socket.emit('addScore', payload)
-    setScore('')
+    setScore(0)
   }
 
   const changeRound = (type) => {
