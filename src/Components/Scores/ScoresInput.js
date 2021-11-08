@@ -17,7 +17,7 @@ const NewScore = ({socket}) => {
   const [players, setPlayers] = useState([])
   const [playerName, setPlayerName] = useState('')
   const [round, setRound] = useState(1)
-  const [score, setScore] = useState('')
+  const [score, setScore] = useState(0)
 
   useEffect(() => {
     const playerListener = (updatedPlayers) => {
@@ -62,7 +62,7 @@ const NewScore = ({socket}) => {
           <InputGroup>
               <InputGroup.Text id="btnGroupAddon">Round</InputGroup.Text>
               <FormControl
-                type="text"
+                type="number"
                 placeholder='Round'
                 value={round}
                 onChange={(e) => {
@@ -97,7 +97,7 @@ const NewScore = ({socket}) => {
         <InputGroup>
           <InputGroup.Text id="btnGroupAddon">Score</InputGroup.Text>
           <FormControl
-            type="text"
+            type="number"
             placeholder='69'
             value={score}
             onChange={(e) => {
