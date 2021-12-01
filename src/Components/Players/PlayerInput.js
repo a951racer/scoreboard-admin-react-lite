@@ -21,7 +21,7 @@ const NewPlayer = ({ socket }) => {
     <>
       <Form onSubmit={submitForm}>
         <InputGroup>
-          <InputGroup.Text id="player">Player</InputGroup.Text>
+          <InputGroup.Text id="player">Add Player</InputGroup.Text>
           <FormControl
             type="text"
             placeholder='Player Name'

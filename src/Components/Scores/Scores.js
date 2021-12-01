@@ -62,7 +62,6 @@ function Scores({ socket }) {
 
     useEffect(() => {
         scoresheetRef.current = scoresheet
-        console.log("new scoresheet: ", scoresheet)
     }, [scoresheet])
 
     useEffect(() => {

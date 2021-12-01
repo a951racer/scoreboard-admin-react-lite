@@ -29,7 +29,7 @@ const NewGame = ({ socket }) => {
       <Form onSubmit={submitForm}>
         <ButtonToolBar>
           <InputGroup>
-            <InputGroup.Text id="btnGroupAddon">Game</InputGroup.Text>
+            <InputGroup.Text id="btnGroupAddon">Game Name</InputGroup.Text>
             <FormControl
               type="text"
               placeholder='Game Name'

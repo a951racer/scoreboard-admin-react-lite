@@ -30,8 +30,8 @@ function App() {
           <div className="chat-container">
             <Game socket={socket} />
             <GameInput socket={socket} />
-            <Scores socket={socket} />
             <PlayerInput socket={socket} />
+            <Scores socket={socket} />
           </div>
         </>
       ) : (
